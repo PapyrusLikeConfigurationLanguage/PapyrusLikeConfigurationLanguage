@@ -74,8 +74,8 @@
     Comments start with a semicolon and end at the end of the line.
 
     \subsubsection{Types}
-    There are currently 3 supported types: strings, integers, and booleans. \\
-    For templates, their keywords are \texttt{string}, \texttt{int}, and \texttt{bool} respectively.
+    There are currently 4 supported types: strings, integers, floats, and booleans. \\
+    For templates, their keywords are \texttt{string}, \texttt{int}, \texttt{float}, and \texttt{bool} respectively.
 
     \subsubsection{Values}
     Parsers are expected to error out if a value is of the wrong type.
@@ -86,6 +86,12 @@
 
     \paragraph{Integers}
     Numbers up to the 64-bit signed integer limit are supported.
+
+    \paragraph{Floats}
+    Numbers up to the 64-bit floating-point limit are supported. \\
+    A dot is used as the decimal separator. \\
+    At least one digit has to be before and after the dot. \\
+    When needed, floats are converted to integers by casting them to integers.
 
     \paragraph{Booleans}
     Booleans are represented by the \texttt{true} and \texttt{false} keywords.
@@ -171,6 +177,8 @@
     \end{minipage}
 
     \newpage
+    \section{Reference Implementation}
+    A reference implementation is available at \url{https://github.com/PapyrusLikeConfigurationLanguage/libPLCL}.
 
     \section{Licence}
     \doclicenseThis
