@@ -7,12 +7,12 @@
 \usepackage{inputenc}
 \usepackage{parskip}
 \usepackage{geometry}
-\usepackage{bookmark}
 \usepackage{titlesec}
 \usepackage[main=british,polish]{babel}
 \usepackage{datetime2}
 \usepackage[protrusion, expansion, tracking]{microtype}
 \usepackage[type={CC}, modifier={by-nc-sa}, version={4.0}]{doclicense}
+\usepackage{xurl}
 
 \let\oldparagraph\paragraph
 \renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}\\}
@@ -26,13 +26,12 @@
     filecolor=black,
     urlcolor=blue,
 }
-\bibliographystyle{plain}
 
 \title{%
-    Papyrus (Like) Configuration Language Specification \\
+    Papyrus (Like) Configuration Language Specification\texorpdfstring{\\}{}
     \large Version CURRENT
 }
-\author{\foreignlanguage{polish}{Natalia Łotocka} - \url{https://natawie.gay}}
+\author{\foreignlanguage{polish}{Natalia Łotocka} - \texorpdfstring{\url{https://natawie.gay}}{https://natawie.gay}}
 
 \begin{document}
     \maketitle
@@ -162,19 +161,14 @@
     \newpage
 
     \section{Example}
-    \begin{minipage}[t]{0.5\textwidth}
+    \begin{minipage}[t]{0.49\textwidth}
         \subsection{Configuration}
         \verbatiminput{examples/simple.p(l)cl}
     \end{minipage}
-    \begin{minipage}[t]{0.5\textwidth}
+    \begin{minipage}[t]{0.49\textwidth}
         \subsection{Template}
         \verbatiminput{examples/simple.p(l)cltem}
     \end{minipage}
-    % \subsection{Configuration}
-    % \verbatiminput{../examples/simple.p(l)cl}
-    % \newpage
-    % \subsection{Template}
-    % \verbatiminput{../examples/simple.p(l)cltem}
 
     \newpage
 
