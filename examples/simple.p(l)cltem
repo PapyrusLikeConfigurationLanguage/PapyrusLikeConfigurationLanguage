@@ -5,7 +5,7 @@ TemplateElement thing
         required = true
     endTemplateElementOptions
     string exampleAttribute required
-    TemplateList
+    TemplateList Nested
         TemplateListElement 0
             TemplateElement thingy
                 string a required 
