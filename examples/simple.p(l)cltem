@@ -22,8 +22,8 @@ TemplateList multipleThings
     endTemplateListOptions
     TemplateListElement 0
         TemplateElement thing2
-            integer a
-            boolean b
+            int a
+            bool b
             string c default "c"
         endTemplateElement
     endTemplateListElement
